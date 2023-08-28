@@ -9,7 +9,7 @@ CREATE TABLE `enhancement_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_bin;
 
 INSERT INTO enhancement_table (case_id, latitude, longitude)
-SELECT case_id, longitude, latitude
+SELECT case_id, latitude, longitude
 FROM shooting_long_lat;
 
 UPDATE enhancement_table et
